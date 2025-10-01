@@ -19,10 +19,10 @@ You can install it in another destination not just `~/projects`, but the folder 
 ### 2. Put this into your lazy config:
 
 ```lua
-require('lazy').setup('plugins', { -- or your plugins folder
+require('lazy').setup('plugins', { -- your plugins folder
   -- ...
   dev = {
-    path = '~/projects', -- or you the folder you have cloned it
+    path = '~/projects', -- the folder where you have cloned it
     patterns = { 'LazyVim' },
   },
 })
@@ -33,7 +33,7 @@ This makes lazy to use the local version of the LazyVim plugin instead of downlo
 ### 3. Link the current theme file in your config
 
 ```bash
-ln -nsf ~/.config/omarchy/current/theme/neovim/lua ~/.config/nvim/lua/plugins/theme.lua # or any destination, which is loaded in your config
+ln -nsf ~/.config/omarchy/current/theme/neovim/lua ~/.config/nvim/lua/plugins/theme.lua # link it to your lazy plugins folder
 ```
 
 ### 4. Theme switching should work now.
