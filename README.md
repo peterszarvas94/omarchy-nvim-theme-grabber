@@ -33,7 +33,9 @@ This makes lazy to use the local version of the LazyVim plugin instead of downlo
 ### 3. Link the current theme file in your config
 
 ```bash
-ln -nsf ~/.config/omarchy/current/theme/neovim/lua ~/.config/nvim/lua/plugins/theme.lua # link it to your lazy plugins folder
+ln -nsf ~/.config/omarchy/current/theme/neovim.lua ~/.config/nvim/lua/plugins/theme.lua # link it to your lazy plugins folder
 ```
 
-### 4. Theme switching should work now.
+### 4. Theme switching should work now for neovim
+
+Exit and restart neovim every time after theme switching.
