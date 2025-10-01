@@ -8,7 +8,7 @@ The only dependency is the lazy package manager, not LazyVim
 
 ## Installation
 
-1. Clone this repo
+### 1. Clone this repo
 
 ```bash
 git clone https://github.com/peterszarvas94/omarchy-nvim-theme-grabber.git ~/projects/LazyVim
@@ -16,13 +16,13 @@ git clone https://github.com/peterszarvas94/omarchy-nvim-theme-grabber.git ~/pro
 
 You can install it in another destination not just `~/projects`, but the folder name should be called LazyVim.
 
-2. Put this into your lazy config:
+### 2. Put this into your lazy config:
 
 ```lua
 require('lazy').setup('plugins', { -- or your plugins folder
   -- ...
   dev = {
-    path = '~/projects', -- or your the folder you have cloned it
+    path = '~/projects', -- or you the folder you have cloned it
     patterns = { 'LazyVim' },
   },
 })
@@ -30,12 +30,10 @@ require('lazy').setup('plugins', { -- or your plugins folder
 
 This makes lazy to use the local version of the LazyVim plugin instead of downloading the actual one from github.
 
-3. Link the current theme file in your config
+### 3. Link the current theme file in your config
 
 ```bash
-ln -nsf ~/.config/omarchy/current/theme/neovim/lua ~/.config/nvim/lua/plugins/theme.lua
+ln -nsf ~/.config/omarchy/current/theme/neovim/lua ~/.config/nvim/lua/plugins/theme.lua # or any destination, which is loaded in your config
 ```
 
-You can use other destination as well, if your set up loads the theme.lua file correctly.
-
-4. Theme switching should work now.
+### 4. Theme switching should work now.
